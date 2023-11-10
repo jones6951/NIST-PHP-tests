@@ -1,0 +1,42 @@
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> cov-capture 2023.9.0 (build 801eb59666 p-2023.9-push-59)
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Coverity Buildless Capture version 2023.9.0 on Darwin 22.6.0 arm64
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Internal version numbers: 801eb59666 p-2023.9-push-59
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> 
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Dumping from hostname : snps-1y17ktgngoao
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Platform info:
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Sysname = Darwin
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Release = 22.6.0
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Machine = arm64
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> 
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> 
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> cov-capture command: cov-capture --dir idir --project-dir . 
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Project dir ".".
+2023-11-10T07:17:25.532Z|cov-capture|40952|debug|> Starting project mode.
+2023-11-10T07:17:27.230Z|cov-inspect-project|40986|info|> Scanning for maven projects.
+2023-11-10T07:17:27.364Z|cov-inspect-project-maven|40987|info|> Using Maven "/opt/homebrew/bin/mvn"
+2023-11-10T07:17:27.407Z|cov-inspect-project|40986|info|> Scanning for gradle projects.
+2023-11-10T07:17:27.407Z|cov-inspect-project|40986|info|> Using JDK for Gradle capture "/opt/homebrew/opt/openjdk@17".
+2023-11-10T07:17:27.726Z|cov-inspect-project|40986|info|> Finished scanning for Java projects.
+2023-11-10T07:17:27.729Z|cov-inspect-project|40986|info|> Scanning the file system for JavaScript, PHP, Python, Ruby, TypeScript, Apex, and Web App Configuration files.
+2023-11-10T07:17:27.747Z|cov-inspect-project|40986|info|> Finished scanning the file system for JavaScript, PHP, Python, Ruby, TypeScript, Apex, and Web App Configuration files.
+2023-11-10T07:17:27.747Z|cov-inspect-project|40986|info|> Successfully found PHP files for project "/Users/mjones/Development/2006-10-23-web-applications-in-php".
+2023-11-10T07:17:27.749Z|cov-capture|40952|info|> Emitting Java projects.
+2023-11-10T07:17:27.821Z|cov-emit-project|40989|debug|> Using project file "idir/cov-capture/2023-11-10_14_17_23/project-info/java-gradle-projects.json".
+2023-11-10T07:17:27.821Z|cov-emit-project|40989|debug|> Using intermediate directory "idir".
+2023-11-10T07:17:27.821Z|cov-emit-project|40989|debug|> Using logging endpoint "idir/cov-capture/cov-internal-fluentd-port".
+2023-11-10T07:17:27.821Z|cov-emit-project|40989|debug|> The specified project file "idir/cov-capture/2023-11-10_14_17_23/project-info/java-gradle-projects.json" did not contain any project information.
+2023-11-10T07:17:27.828Z|cov-emit-project|40991|debug|> Using project file "idir/cov-capture/2023-11-10_14_17_23/project-info/java-maven-projects.json".
+2023-11-10T07:17:27.828Z|cov-emit-project|40991|debug|> Using intermediate directory "idir".
+2023-11-10T07:17:27.828Z|cov-emit-project|40991|debug|> Using logging endpoint "idir/cov-capture/cov-internal-fluentd-port".
+2023-11-10T07:17:27.828Z|cov-emit-project|40991|debug|> The specified project file "idir/cov-capture/2023-11-10_14_17_23/project-info/java-maven-projects.json" did not contain any project information.
+2023-11-10T07:17:27.829Z|cov-capture|40952|info|> Emitting PHP projects.
+2023-11-10T07:17:27.834Z|cov-emit-project|40992|debug|> Using project file "idir/cov-capture/2023-11-10_14_17_23/project-info/php-0.json".
+2023-11-10T07:17:27.834Z|cov-emit-project|40992|debug|> Using intermediate directory "idir".
+2023-11-10T07:17:27.834Z|cov-emit-project|40992|debug|> Using logging endpoint "idir/cov-capture/cov-internal-fluentd-port".
+2023-11-10T07:17:27.835Z|cov-emit-project|40992|debug|> Project "/Users/mjones/Development/2006-10-23-web-applications-in-php": Transition from Emitted/Inspected to Emitted/Emitting
+2023-11-10T07:17:27.835Z|cov-emit-project|40992|info|> Emitting project "/Users/mjones/Development/2006-10-23-web-applications-in-php".
+2023-11-10T07:17:28.124Z|cov-emit-project|40992|debug|> Project "/Users/mjones/Development/2006-10-23-web-applications-in-php": Transition from Emitted/Emitting to Emitted/Emitted
+2023-11-10T07:17:28.124Z|cov-emit-project|40992|debug|> Project "/Users/mjones/Development/2006-10-23-web-applications-in-php": Transition from Emitted/Emitted to Succeeded/Emitted
+2023-11-10T07:17:28.124Z|cov-emit-project|40992|debug|> Project "/Users/mjones/Development/2006-10-23-web-applications-in-php": Transition from Succeeded/Emitted to Succeeded/Completed
+2023-11-10T07:17:28.125Z|cov-capture|40952|info|> All projects were captured successfully.
+2023-11-10T07:17:28.151Z|cov-capture|40952|info|> Emitted 15 PHP compilation units (100%) successfully.

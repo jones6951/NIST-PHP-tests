@@ -1,0 +1,115 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 1951,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2007-03-13",
+        "language": "php",
+        "description": "The test case shows a PHP Include VUlnerability. The defense mechanism protect from Remote File Inclusion with the Apache DOCUMENT_ROOT check and also the directory traversal with the regular expression.",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/error.inc"
+          },
+          "length": 8,
+          "sourceLanguage": "html",
+          "hashes": {
+            "sha-256": "a549692cad92336b3bcbb4247cbb5727fca52686d055048d9579ec4e318980b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/file.inc"
+          },
+          "length": 36,
+          "sourceLanguage": "html",
+          "hashes": {
+            "sha-256": "0e328f63e3a182b710e3dc52bbe129acc9070ba57e2a80038cd935b11eebb060"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/file_lod3.phps"
+          },
+          "length": 829,
+          "sourceLanguage": "php",
+          "hashes": {
+            "sha-256": "e44d24b44e05680df5b49af349c11c39e662c667e759e7a68d47a4553309f480"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "98",
+              "name": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-98",
+          "message": {
+            "text": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/file_lod3.phps",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "98",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

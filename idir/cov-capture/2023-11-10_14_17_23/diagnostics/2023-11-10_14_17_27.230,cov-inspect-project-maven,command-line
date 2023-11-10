@@ -1,0 +1,11 @@
+/Users/mjones/Tools/Coverity/cov-analysis-macos-arm-2023.9.0/jdk20/bin/java
+-jar
+/Users/mjones/Tools/Coverity/cov-analysis-macos-arm-2023.9.0/jars/cov-inspect-project-maven.jar
+--project-dir
+/Users/mjones/Development/2006-10-23-web-applications-in-php
+--output-file
+idir/cov-capture/2023-11-10_14_17_23/project-info/java-maven-projects.json
+--cov-capture-dir
+/Users/mjones/Development/2006-10-23-web-applications-in-php/idir/cov-capture
+--logging-endpoint
+idir/cov-capture/cov-internal-fluentd-port

@@ -1,0 +1,5 @@
+/Users/mjones/Tools/Coverity/cov-analysis-macos-arm-2023.9.0/bin/cov-configure
+--javascript
+--no-typescript
+-c
+idir/cov-capture/2023-11-10_14_17_23/compiler-config/javascript/coverity_config.xml

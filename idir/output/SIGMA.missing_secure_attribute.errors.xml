@@ -1,0 +1,360 @@
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1945-v1.0.0/src/hash_lod2.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>14</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1945-v1.0.0/src/hash_lod2.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1945-v1.0.0/src/hash_lod2.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>15</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>15</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1945-v1.0.0/src/hash_lod2.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1944-v1.0.0/src/hash_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>14</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1944-v1.0.0/src/hash_lod1.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1944-v1.0.0/src/hash_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>15</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>15</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1944-v1.0.0/src/hash_lod1.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1943-v1.0.0/src/hash_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>14</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1943-v1.0.0/src/hash_lod0.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1943-v1.0.0/src/hash_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>15</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>15</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1943-v1.0.0/src/hash_lod0.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1947-v1.0.0/src/hash_lod4.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>30</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>30</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1947-v1.0.0/src/hash_lod4.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1947-v1.0.0/src/hash_lod4.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>31</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>31</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1947-v1.0.0/src/hash_lod4.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1946-v1.0.0/src/hash_lod3.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>30</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>30</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1946-v1.0.0/src/hash_lod3.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.missing_secure_attribute</checker>
+<type>sigma.missing_secure_attribute</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1946-v1.0.0/src/hash_lod3.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.}}</description>
+<line>31</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `secure` cookie attribute to `true`.}}</description>
+<line>31</line>
+</event>
+<extra>missing_secure_attribute_core_php -- 1946-v1.0.0/src/hash_lod3.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The `secure` attribute is not enabled for cookies. If the attacker can intercept network traffic they could steal the victim’s session cookie and impersonate the victim or even modify the contents of the cookie.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

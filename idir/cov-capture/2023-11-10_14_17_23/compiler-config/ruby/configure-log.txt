@@ -1,0 +1,3 @@
+Native Compiler and extra args: ./ 
+Working directory: /Users/mjones/Development/2006-10-23-web-applications-in-php
+Comptype: ruby

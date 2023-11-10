@@ -1,0 +1,72 @@
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.insecure_random</checker>
+<type>sigma.insecure_random</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1947-v1.0.0/src/hash_lod4.php</file>
+<function>my_hash(Unknown, Unknown)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The pseudorandom number generator functions `rand()` and `mt_rand()` do not generate cryptographically secure values. Hence, they must not be used for functionalities that depend on unpredictable values. Otherwise, attackers can guess the generated values and manipulate the functionality to gain privileges or access sensitive data.}}</description>
+<line>19</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use `random_int()` or `random_bytes()` instead of `rand()` and `mt_rand()`.}}</description>
+<line>19</line>
+</event>
+<extra>insecure_random_core_php -- 1947-v1.0.0/src/hash_lod4.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.insecure_random_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Insecure random</type>
+<cwe>338</cwe>
+<localEffect></localEffect>
+<longDescription>The pseudorandom number generator functions `rand()` and `mt_rand()` do not generate cryptographically secure values. Hence, they must not be used for functionalities that depend on unpredictable values. Otherwise, attackers can guess the generated values and manipulate the functionality to gain privileges or access sensitive data.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.insecure_random</checker>
+<type>sigma.insecure_random</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1946-v1.0.0/src/hash_lod3.php</file>
+<function>my_hash(Unknown, Unknown)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The pseudorandom number generator functions `rand()` and `mt_rand()` do not generate cryptographically secure values. Hence, they must not be used for functionalities that depend on unpredictable values. Otherwise, attackers can guess the generated values and manipulate the functionality to gain privileges or access sensitive data.}}</description>
+<line>19</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use `random_int()` or `random_bytes()` instead of `rand()` and `mt_rand()`.}}</description>
+<line>19</line>
+</event>
+<extra>insecure_random_core_php -- 1946-v1.0.0/src/hash_lod3.php</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.insecure_random_core_php</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Insecure random</type>
+<cwe>338</cwe>
+<localEffect></localEffect>
+<longDescription>The pseudorandom number generator functions `rand()` and `mt_rand()` do not generate cryptographically secure values. Hence, they must not be used for functionalities that depend on unpredictable values. Otherwise, attackers can guess the generated values and manipulate the functionality to gain privileges or access sensitive data.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

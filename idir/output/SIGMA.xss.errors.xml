@@ -1,0 +1,981 @@
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1937-v1.0.0/src/xss_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _GET with key q}}</description>
+<line>5</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_GET['q'] is a source of tainted data}}</description>
+<line>5</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>5</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>5</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>5</line>
+</event>
+<extra>XssechoHttp_GET__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/xss_lod0.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/xss_lod0.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1943-v1.0.0/src/hash_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _COOKIE with key username}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_COOKIE['username'] is a source of tainted data}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>25</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>25</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>25</line>
+</event>
+<extra>XssechoHttpHeader_COOKIE__builtin__username</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/hash_lod0.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/hash_lod0.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1945-v1.0.0/src/hash_lod2.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _COOKIE with key username}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_COOKIE['username'] is a source of tainted data}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>25</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>25</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>25</line>
+</event>
+<extra>XssechoHttpHeader_COOKIE__builtin__username</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/hash_lod2.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/hash_lod2.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1947-v1.0.0/src/hash_lod4.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _COOKIE with key username}}</description>
+<line>41</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_COOKIE['username'] is a source of tainted data}}</description>
+<line>41</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>41</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>41</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>41</line>
+</event>
+<extra>XssechoHttpHeader_COOKIE__builtin__username</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/hash_lod4.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/hash_lod4.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1946-v1.0.0/src/hash_lod3.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _COOKIE with key username}}</description>
+<line>41</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_COOKIE['username'] is a source of tainted data}}</description>
+<line>41</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>41</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>41</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>41</line>
+</event>
+<extra>XssechoHttpHeader_COOKIE__builtin__username</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/hash_lod3.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/hash_lod3.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1944-v1.0.0/src/hash_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _COOKIE with key username}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_COOKIE['username'] is a source of tainted data}}</description>
+<line>25</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>25</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>25</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>25</line>
+</event>
+<extra>XssechoHttpHeader_COOKIE__builtin__username</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/hash_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/hash_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1940-v1.0.0/src/sql_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key q}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['q'] is a source of tainted data}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to q}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{concatenating the tainted data}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>38</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>38</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>38</line>
+</event>
+<extra>XssechoHttp_POST__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod0.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod0.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1941-v1.0.0/src/sql_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key q}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['q'] is a source of tainted data}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to q}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{concatenating the tainted data}}</description>
+<line>49</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>49</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>49</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>49</line>
+</event>
+<extra>XssechoHttp_POST__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1941-v1.0.0/src/sql_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key i}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['i'] is a source of tainted data}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to i}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{concatenating the tainted data}}</description>
+<line>56</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>56</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>56</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>56</line>
+</event>
+<extra>XssechoHttp_POST__builtin__i</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1938-v1.0.0/src/xss_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _GET with key i}}</description>
+<line>21</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>21</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_GET['i'] is a source of tainted data}}</description>
+<line>21</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>21</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>21</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>21</line>
+</event>
+<extra>XssechoHttp_GET__builtin__i</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/xss_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/xss_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1938-v1.0.0/src/xss_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _GET with key q}}</description>
+<line>19</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>19</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_GET['q'] is a source of tainted data}}</description>
+<line>19</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>19</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>19</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>19</line>
+</event>
+<extra>XssechoHttp_GET__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/xss_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/xss_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1939-v1.0.0/src/xss_lod2.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.htmlentities returns the tainted data}}</description>
+<line>17</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _GET with key q}}</description>
+<line>17</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_GET['q'] is a source of tainted data}}</description>
+<line>17</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>17</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>8</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.htmlentities}}</description>
+<line>17</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>17</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>17</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>17</line>
+</event>
+<extra>XssechoHttphtmlentities</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/xss_lod2.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/xss_lod2.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.xss</checker>
+<type>sigma.xss</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1939-v1.0.0/src/xss_lod2.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.htmlentities returns the tainted data}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _GET with key i}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_GET['i'] is a source of tainted data}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>8</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.htmlentities}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling __builtin__.echo sinks some keys in}}</description>
+<line>18</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.}}</description>
+<line>18</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Escape non-constant data appropriately before concatenating it into HTML. The specific sequence of escapers necessary to make data safe depends on its syntactic position in the HTML. Allowing only safe characters sometimes suffices to avoid XSS vulnerabilities, but only the strictest allow lists prevent all attacks.}}</description>
+<line>18</line>
+</event>
+<extra>XssechoHttphtmlentities</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xss_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/xss_lod2.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/xss_lod2.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Cross-site Scripting</type>
+<cwe>79</cwe>
+<localEffect></localEffect>
+<longDescription>Untrusted user-supplied data is inserted into a context that can execute JavaScript without adequate validation, escaping, or filtering. A user can execute arbitrary JavaScript on a web page viewed or accessed by another user, potentially allowing session hijacking, disclosing sensitive data in the DOM, or viewing of keyboard and mouse events.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

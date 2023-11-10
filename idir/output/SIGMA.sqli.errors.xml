@@ -1,0 +1,221 @@
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.sqli</checker>
+<type>sigma.sqli</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1940-v1.0.0/src/sql_lod0.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key q}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['q'] is a source of tainted data}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to q}}</description>
+<line>37</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.}}</description>
+<line>39</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.}}</description>
+<line>39</line>
+</event>
+<extra>SqlConcatqHttp_POST__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.sqli_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod0.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod0.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>SQL Injection</type>
+<cwe>89</cwe>
+<localEffect></localEffect>
+<longDescription>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.sqli</checker>
+<type>sigma.sqli</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1941-v1.0.0/src/sql_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key i}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['i'] is a source of tainted data}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to i}}</description>
+<line>55</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.}}</description>
+<line>57</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.}}</description>
+<line>57</line>
+</event>
+<extra>SqlConcatiHttp_POST__builtin__i</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.sqli_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>SQL Injection</type>
+<cwe>89</cwe>
+<localEffect></localEffect>
+<longDescription>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>PHP</lang>
+<checker>SIGMA.sqli</checker>
+<type>sigma.sqli</type>
+<subtype>core_php</subtype>
+<file>/Users/mjones/Development/2006-10-23-web-applications-in-php/1941-v1.0.0/src/sql_lod1.php</file>
+<function>source_file</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{reading tainted data from _POST with key q}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{calling typecast returns the tainted data}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{returning the tainted data}}</description>
+<line>10</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{$_POST['q'] is a source of tainted data}}</description>
+<line>48</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning the tainted data to q}}</description>
+<line>48</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.}}</description>
+<line>50</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.}}</description>
+<line>50</line>
+</event>
+<extra>SqlConcatqHttp_POST__builtin__q</extra>
+<subcategory>core_php</subcategory>
+<antecedentMerge>
+<checker>SIGMA.sqli_core_php</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>source_file</function>
+<extra>/src/sql_lod1.php</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>SQL Injection</type>
+<cwe>89</cwe>
+<localEffect></localEffect>
+<longDescription>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
