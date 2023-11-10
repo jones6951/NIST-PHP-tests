@@ -1,9 +1,0 @@
---no-banner
---project-view
-idir/cov-capture/2023-11-10_14_17_23/project-info/java-maven-projects.json
---dir
-idir
---logging-endpoint
-idir/cov-capture/cov-internal-fluentd-port
---config
-/Users/mjones/Development/2006-10-23-web-applications-in-php/idir/cov-capture/2023-11-10_14_17_23/compiler-config/java/coverity_config.xml
